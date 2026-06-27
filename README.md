@@ -35,7 +35,9 @@ After installing, restart your agent session. The skill description will appear 
 - 🎬 **Video + audio support** — .mp4, .mkv, .mov, .mp3, .wav, and more
 - 🔇 **Smart silence skipping** — VAD filters out long pauses
 
-## Quick Start
+## Run as a CLI Tool
+
+When using the tool directly (not via an agent):
 
 ```bash
 # 1. Install Python package
@@ -114,7 +116,7 @@ npx skills add haoyiyin/easy-subtitle -g -y
 
 Or just tell your agent:
 
-> _"Install this skill: https://github.com/haoyiyin/easy-subtitle"_
+> _"Install this skill: <https://github.com/haoyiyin/easy-subtitle>"_
 
 Most modern coding agents know where their skill directory lives.
 
