@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "easy-subtitle"
+version = "0.1.0"
+description = "Offline audio/video to subtitle (SRT) converter using faster-whisper with original-text alignment"
+requires-python = ">=3.10"
+dependencies = ["faster-whisper>=1.0", "ffmpeg-python>=0.2"]
+
+[project.scripts]
+easy-subtitle = "easy_subtitle.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["easy_subtitle*"]
