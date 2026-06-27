@@ -1,31 +1,18 @@
 # easy-subtitle
 
 > **Agent Skill** — follows the [Agent Skills](https://agentskills.io) standard.
-> Install via `npx skills add haoyiyin/easy-subtitle`, or manually clone into your agent's skills directory.
+> Your agent knows how to install this. Just tell it to.
 
 **Offline audio/video to SRT subtitle converter** — powered by [faster-whisper](https://github.com/SYSTRAN/faster-whisper).
 
 ## Install as an Agent Skill
 
-This repository is an [Agent Skill](https://agentskills.io) — a self-contained capability package that AI coding agents load on-demand. Once installed, your agent can transcribe media files to SRT subtitles without manual CLI commands.
-
-### One-liner (recommended)
+This repository is an [Agent Skill](https://agentskills.io). Tell your agent to install it and it will clone the repo to the correct skills directory for your harness (Pi, Claude Code, Codex, etc.).
 
 ```bash
-npx skills add haoyiyin/easy-subtitle
+# The agent will figure out something like:
+git clone https://github.com/haoyiyin/easy-subtitle.git ~/.agents/skills/easy-subtitle
 ```
-
-This works across **Claude Code**, **Codex**, **Pi**, **Cline**, and other Agent Skills-compatible harnesses.
-
-### Manual install per harness
-
-| Harness | Install command |
-|---------|----------------|
-| **Pi** | `git clone https://github.com/haoyiyin/easy-subtitle.git ~/.agents/skills/easy-subtitle` |
-| **Claude Code** | `git clone https://github.com/haoyiyin/easy-subtitle.git ~/.claude/skills/easy-subtitle` |
-| **Codex** | `git clone https://github.com/haoyiyin/easy-subtitle.git ~/.codex/skills/easy-subtitle` |
-
-After installing, restart your agent session. The skill description will appear in the agent's available skills list and load automatically when you ask to generate subtitles.
 
 ## Features
 
